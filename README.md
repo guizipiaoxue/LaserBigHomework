@@ -10,31 +10,14 @@
 
 使用 Python 3.10 或更新版本。打开终端，进入包含本 README 的项目根目录。
 
-创建虚拟环境：
 
-```bash
-python -m venv .venv
-```
-
-Linux / macOS 激活方式：
-
-```bash
-source .venv/bin/activate
-```
-
-Windows PowerShell 激活方式：
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-激活后安装依赖：
+自行创建虚拟环境，激活后安装依赖：
 
 ```bash
 python -m pip install -r requirement.txt
 ```
 
-依赖为 NumPy、Matplotlib 和 PyYAML。如果系统只提供 `python3` 命令，创建虚拟环境时使用 `python3 -m venv .venv`。
+依赖为 NumPy、Matplotlib 和 PyYAML。
 
 ## 代码启动方式
 
@@ -108,5 +91,3 @@ python src/Python/run_tilt.py
 | `*.png` | Python 生成的场分布和收敛图 |
 
 `converged: false` 表示未满足收敛条件，最后一轮的场不能作为已经收敛的模式。
-
-现有报告图片集中在 `assert/`；对应原始数据保留在报告引用的四个运行目录中，图片来源见 [图片索引](assert/manifest.json)。新运行的图片仍保存在新运行目录，不会自动覆盖报告插图。更换报告图片时，应同时核对报告中的数值、图注和数据来源。
