@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">平面间传播与凹面镜的顶点参考平面</title>
+  <desc id="desc">左图显示出发点到观察点的斜距 rho 和两平面间轴向距离 L。右图显示凹面镜离轴位置向腔内突出 h，因此近轴去回路程均缩短 h，总共少走 2h。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#334155"/></marker>
+    <marker id="bluearrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/></marker>
+    <marker id="redarrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#dc2626"/></marker>
+  </defs>
+  <rect width="1200" height="520" fill="#fff"/>
+  <g font-family="'Noto Sans CJK SC','Microsoft YaHei',sans-serif" fill="#1e293b">
+    <text x="34" y="38" font-size="23" font-weight="bold">A. 两个平行参考面间的传播</text>
+    <text x="636" y="38" font-size="23" font-weight="bold">B. 真实凹面与顶点参考平面</text>
+    <line x1="598" y1="60" x2="598" y2="470" stroke="#e2e8f0" stroke-width="2"/>
+    <line x1="110" y1="100" x2="110" y2="370" stroke="#64748b" stroke-width="4"/>
+    <line x1="490" y1="100" x2="490" y2="370" stroke="#64748b" stroke-width="4"/>
+    <text x="76" y="82" font-size="19">z = 0</text>
+    <text x="452" y="82" font-size="19">z = L</text>
+    <line x1="55" y1="290" x2="550" y2="290" stroke="#94a3b8" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+    <text x="529" y="317" font-size="17">z 轴</text>
+    <line x1="110" y1="235" x2="490" y2="155" stroke="#2563eb" stroke-width="3" marker-end="url(#bluearrow)"/>
+    <circle cx="110" cy="235" r="6" fill="#2563eb"/>
+    <circle cx="490" cy="155" r="6" fill="#2563eb"/>
+    <text x="128" y="260" font-size="19">Q (x′, y′, 0)</text>
+    <text x="335" y="130" font-size="19">P (x, y, L)</text>
+    <text x="294" y="184" font-size="23" fill="#2563eb">ρ</text>
+    <line x1="110" y1="405" x2="490" y2="405" stroke="#334155" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="293" y="433" font-size="22">L</text>
+    <text x="65" y="472" font-size="17">ρ² = L² + (x − x′)² + (y − y′)²</text>
+    <line x1="805" y1="85" x2="805" y2="405" stroke="#64748b" stroke-width="3"/>
+    <text x="700" y="72" font-size="18">腔内共同比较面</text>
+    <line x1="1100" y1="75" x2="1100" y2="410" stroke="#64748b" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="984" y="64" font-size="17">顶点参考平面</text>
+    <path d="M980 85 Q1100 165 1100 245 Q1100 325 980 405" fill="none" stroke="#7c3aed" stroke-width="5"/>
+    <text x="906" y="380" font-size="19" fill="#7c3aed">真实凹面镜</text>
+    <text x="847" y="334" font-size="17">腔内在镜面左侧</text>
+    <line x1="660" y1="245" x2="1150" y2="245" stroke="#94a3b8" stroke-dasharray="8 6"/>
+    <circle cx="1100" cy="245" r="5" fill="#7c3aed"/>
+    <text x="1110" y="269" font-size="17">顶点</text>
+    <circle cx="1056.8" cy="149" r="5" fill="#7c3aed"/>
+    <line x1="817" y1="145" x2="1047" y2="145" stroke="#2563eb" stroke-width="2" marker-end="url(#bluearrow)"/>
+    <line x1="1047" y1="156" x2="817" y2="156" stroke="#dc2626" stroke-width="2" marker-end="url(#redarrow)"/>
+    <text x="850" y="126" font-size="18">去程约 d − h</text>
+    <text x="850" y="188" font-size="18">回程约 d − h</text>
+    <line x1="1056.8" y1="111" x2="1100" y2="111" stroke="#334155" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <line x1="1056.8" y1="112" x2="1056.8" y2="149" stroke="#94a3b8" stroke-dasharray="3 3"/>
+    <text x="1069" y="100" font-size="19">h</text>
+    <line x1="805" y1="429" x2="1100" y2="429" stroke="#334155" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="947" y="455" font-size="21">d</text>
+    <text x="677" y="488" font-size="18">Δℓ ≈ 2(d − h) − 2d = −2h</text>
+  </g>
+  <g>
+    <path d="M490 155 L477 151 L480 164 Z" fill="#2563eb"/>
+    <path d="M110 405 L122 400 L122 410 Z M490 405 L478 400 L478 410 Z" fill="#334155"/>
+    <path d="M1047 145 L1036 140 L1036 150 Z" fill="#2563eb"/>
+    <path d="M817 156 L828 151 L828 161 Z" fill="#dc2626"/>
+    <path d="M1056.8 111 L1064.8 107 L1064.8 115 Z M1100 111 L1092 107 L1092 115 Z" fill="#334155"/>
+    <path d="M805 429 L817 424 L817 434 Z M1100 429 L1088 424 L1088 434 Z" fill="#334155"/>
+    <path d="M550 290 L540 286 L540 294 Z" fill="#94a3b8"/>
+  </g>
+</svg>

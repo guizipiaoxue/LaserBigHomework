@@ -1,0 +1,38 @@
+
+# All physical, numerical and output parameters are kept in this file.
+# SI units are used unless a key explicitly contains mrad, mm or factor.
+project:
+  name: "confocal_strip_cavity"
+  wavelength_m: 1.064e-6
+  cavity_length_m: 0.10
+  mirror1_radius_m: 0.10
+  mirror2_radius_m: 0.10
+
+grid:
+  one_d:
+    n: 2048
+    window_half_width_factor: 6.0
+    aperture_half_width_factor: 4.0
+  two_d:
+    n: 512
+    window_half_width_factor: 6.0
+    aperture_half_width_factor: 4.0
+  propagation_padding_factor: 2
+
+fox_li:
+  max_iterations: 3000
+  convergence_threshold: 1.0e-7
+  eigenvalue_relative_threshold: 1.0e-8
+  consecutive_converged: 5
+  intensity_floor: 1.0e-3
+  initializer: gaussian
+  random_seed: 20261006
+
+tilt:
+  mirror: M2
+  angles_mrad: [0.0, 0.1, 0.3, 0.5, 1.0, 2.0, 3.0, 5.0, 6.0]
+  warm_start: false
+  linear_fit_max_mrad: 0.5
+
+output:
+  root: results
